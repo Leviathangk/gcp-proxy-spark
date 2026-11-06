@@ -20,7 +20,7 @@
 
 ## 客户端与协议
 
-| 协议 | 默认部署 | sing-box 1.13.19 | Mihomo 1.19.32 | Shadowrocket |
+| 协议 | 默认部署 | sing-box 1.13.21 | Mihomo 1.19.33 | Shadowrocket |
 |---|---|---|---|---|
 | VLESS Reality / TCP | 是 | 生成与原生验证 | 生成与原生验证 | URI，真机待验证 |
 | AnyTLS / 普通 TLS | 是 | 同上 | 同上 | URI，真机待验证 |

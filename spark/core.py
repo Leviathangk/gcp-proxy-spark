@@ -14,7 +14,7 @@ from urllib.parse import quote, urlencode
 import yaml
 
 PROTOCOLS = ("vless", "anytls", "hysteria2", "tuic", "vmess")
-VERSIONS = {"singbox": "1.13.19", "clash": "1.19.32"}
+VERSIONS = {"singbox": "1.13.21", "clash": "1.19.33"}
 # A tested target, not a claim about every older client or protocol extension.
 CAPABILITIES = {"singbox": set(PROTOCOLS), "clash": set(PROTOCOLS),
                 "shadowrocket": set(PROTOCOLS)}

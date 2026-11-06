@@ -109,7 +109,7 @@ def main():
                         c = clash_config(one)
                         c["mixed-port"] = port
                         # Test-only CA trust, never skip certificate verification.
-                        # Spelling is the upstream RawTLS YAML key in v1.19.32.
+                        # Spelling is the upstream RawTLS YAML key in v1.19.33.
                         c["tls"] = {"custom-certifactes": [cert.read_text()]}
                         fingerprint = checked(["openssl", "x509", "-in", cert, "-noout", "-fingerprint", "-sha256"]).stdout.strip().split("=", 1)[1].replace(":", "")
                         for proxy in c["proxies"]:

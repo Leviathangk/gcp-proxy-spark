@@ -1,42 +1,42 @@
 {
   "schema": 1,
   "singbox": {
-    "version": "1.13.19",
+    "version": "1.13.21",
     "assets": [
       {
-        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-darwin-arm64.tar.gz",
-        "digest": "sha256:23bf191906f2dfc9f00e9f0092f274f3426ba9377327e903ff94e636b64d0997",
-        "name": "sing-box-1.13.19-darwin-arm64.tar.gz"
+        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.21/sing-box-1.13.21-darwin-arm64.tar.gz",
+        "digest": "sha256:62bca85bf08b9145288729cf010c98ea9877b8086f7369cde9e127012d509424",
+        "name": "sing-box-1.13.21-darwin-arm64.tar.gz"
       },
       {
-        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-amd64.tar.gz",
-        "digest": "sha256:ef88a9e577d474210867bd708933d042e9b70106529df2656182c9db90106aa1",
-        "name": "sing-box-1.13.19-linux-amd64.tar.gz"
+        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.21/sing-box-1.13.21-linux-amd64.tar.gz",
+        "digest": "sha256:24f9ef8e7234e13e71e74c3598a4164c5fe07b7b67ccc6e96cf68b54789f72cd",
+        "name": "sing-box-1.13.21-linux-amd64.tar.gz"
       },
       {
-        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-arm64.tar.gz",
-        "digest": "sha256:7fe3597a95a3c5ad67477b1d7653b9ce097e0be7c676758eba1fcf558f353d57",
-        "name": "sing-box-1.13.19-linux-arm64.tar.gz"
+        "browser_download_url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.21/sing-box-1.13.21-linux-arm64.tar.gz",
+        "digest": "sha256:3e30b876c9a93c19e503e2a2d6249cf05e6a26766553d4b61e1daf48223f304f",
+        "name": "sing-box-1.13.21-linux-arm64.tar.gz"
       }
     ]
   },
   "mihomo": {
-    "version": "1.19.32",
+    "version": "1.19.33",
     "assets": [
       {
-        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.32/mihomo-darwin-arm64-v1.19.32.gz",
-        "digest": "sha256:3312a6780652c622890fd4357c6a853bbf865464fd047ac7b7f52dab8de18652",
-        "name": "mihomo-darwin-arm64-v1.19.32.gz"
+        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-darwin-arm64-v1.19.33.gz",
+        "digest": "sha256:060b64b0f2c9a310831db0fe4adb2878de67bfa606c311813c1f13966aa504b6",
+        "name": "mihomo-darwin-arm64-v1.19.33.gz"
       },
       {
-        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.32/mihomo-linux-amd64-compatible-v1.19.32.gz",
-        "digest": "sha256:ba3ce607747a07f948fc35780e108a4a7c7f552a38b9bd4d115f313ebcb89c20",
-        "name": "mihomo-linux-amd64-compatible-v1.19.32.gz"
+        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-linux-amd64-compatible-v1.19.33.gz",
+        "digest": "sha256:386508bfb1c72c43b6a0eda73708ecdce82546581b0ebcb16366c53757c622b6",
+        "name": "mihomo-linux-amd64-compatible-v1.19.33.gz"
       },
       {
-        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.32/mihomo-linux-arm64-v1.19.32.gz",
-        "digest": "sha256:9dd862e28b46ff7d775f169cceebc28deccaa0a9e804237d421cd2571e0caba0",
-        "name": "mihomo-linux-arm64-v1.19.32.gz"
+        "browser_download_url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-linux-arm64-v1.19.33.gz",
+        "digest": "sha256:ba408b317080ee265c46cb923a50018c1b82cbd708551cdd46a1e3e307396187",
+        "name": "mihomo-linux-arm64-v1.19.33.gz"
       }
     ]
   }
