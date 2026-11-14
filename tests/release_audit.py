@@ -4,8 +4,10 @@ from pathlib import Path
 import re
 import subprocess
 
-ROOT_FILES = {"README.md", "LICENSE", "NOTICE.md", "AGENTS.md", "SECURITY.md", "pyproject.toml", ".gitignore"}
-ROOT_DIRS = {"spark", "tests", "docs", "skills", "scripts", ".github"}
+ROOT_FILES = {"README.md", "LICENSE", "AGENTS.md", "pyproject.toml", ".gitignore"}
+ROOT_DIRS = {"spark", "tests", "docs", "scripts", ".github", ".agents", ".claude"}
+REQUIRED = ROOT_FILES | {"docs/notice.md", ".github/SECURITY.md", "docs/agent-handoff.md",
+                         ".agents/skills/gcp-proxy-deploy/SKILL.md", ".claude/CLAUDE.md"}
 PATTERNS = [r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----", r"gh[pousr]_[A-Za-z0-9]{30,}",
             r"AKIA[0-9A-Z]{16}", r"AIza[0-9A-Za-z_-]{35}", r'"type"\s*:\s*"service_account"',
             r"https?://[^\s]+/sub/[A-Za-z0-9_-]{32,}"]
@@ -33,7 +35,7 @@ def main():
                 continue
             if ip.is_global:
                 errors.append(f"Unexpected public IP in {filename}")
-    for required in ROOT_FILES:
+    for required in REQUIRED:
         if required not in files:
             errors.append(f"Missing required release file: {required}")
     if errors:

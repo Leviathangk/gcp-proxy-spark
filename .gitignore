@@ -9,3 +9,4 @@ private/
 *.pem
 *.key
 .DS_Store
+.claude/settings.local.json

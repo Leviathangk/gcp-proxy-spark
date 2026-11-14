@@ -5,11 +5,11 @@ description: Deploy, inspect, upgrade or roll back gcp-proxy-spark on an existin
 
 # Spark 部署技能
 
-在仓库根目录工作。先读 `../../README.md`、`../../docs/verification.md`，连接/安装/续期操作读 `../../docs/deployment.md`；协议疑问读 `../../docs/compatibility.md`，统计疑问读 `../../docs/traffic.md`。以上路径均相对本技能目录。
+在仓库根目录工作，以下路径均相对仓库根目录。先读 `docs/agent-handoff.md`（交接流程与用户一次性输入）、`README.md`、`docs/verification.md`；连接/安装/续期操作读 `docs/deployment.md`；协议疑问读 `docs/compatibility.md`，统计疑问读 `docs/traffic.md`。
 
 ## 工作流
 
-1. 确认请求是检查还是变更；接入已有机器并核对目标身份。gcloud/IAP 或已有 SSH 均可，不读取/打印账号私钥与 access token。
+1. 读取用户填写的交接单（`docs/agent-handoff.md` 模板）；缺项一次性列出提问，不逐条追问。确认请求是检查还是变更；接入已有机器并核对目标身份。gcloud/IAP 或已有 SSH 均可，不读取/打印账号私钥与 access token。
 2. 只读检查系统、已有服务、监听端口、IP 稳定性、GCP 网络规则。发现 `/etc/s-box`、业务网站或冲突端口就停止，不接管，不猜测哪些旧服务可以关闭。
 3. 让用户选择主要客户端 sing-box/Shadowrocket 或 Mihomo 系 Clash；按锁定能力表生成，不能把 Hysteria2/普通 AnyTLS 一律排除。选择 TLS 1.3 Reality 握手站点需用户确认可用/允许使用。
 4. 首次生成仓库外私密 manifest；升级沿用当前 manifest。运行 plan 与 inspect，展示节点增删、端口、依赖安装、证书申请和短暂重启影响，不展示凭证。模式变化须展示差异。

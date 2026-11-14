@@ -51,9 +51,13 @@ python3 -m venv .venv
 
 ## 让 Agent 部署
 
-把仓库交给 Agent，并说：
+支持 Claude Code 与 Codex：两者都从 `AGENTS.md` 进入，部署技能在 `.agents/skills/gcp-proxy-deploy/`（Claude Code 通过 `.claude/` 下的入口加载同一份内容）。
 
-> 读取 AGENTS.md 和 skills/gcp-proxy-deploy/SKILL.md。先只读检查我已有的服务器，生成部署计划；不要创建实例，不要覆盖已有服务，变更前等待我确认。
+按 [Agent 交接手册](docs/agent-handoff.md) 填一次交接单，然后对 Agent 说：
+
+> 读取 AGENTS.md，按 docs/agent-handoff.md 使用我的交接单。先只读检查我已有的服务器，生成部署计划；不要创建实例，不要覆盖已有服务，变更前等待我确认。
+
+整个流程中人工只需三步：登录并填交接单、审阅一次计划并确认、在客户端导入订阅。
 
 Agent 使用现有 SSH 或 gcloud/IAP 连接，不把登录凭证放进仓库。登录、IAM、IP 固定、云防火墙和证书挑战失败等人工环节都有停止条件。详见 [部署手册](docs/deployment.md)。
 
@@ -99,7 +103,7 @@ UTC 自然月，十进制 GB，上传＋下载，IPv4＋IPv6；包含隐藏但�
 - 不关闭证书校验；不提供不安全 HTTP 订阅回退。
 - 仅操作项目自有服务、Nginx 配置和 nftables 表；不清空系统防火墙。
 - 使用代理须遵守所在地区法律与云服务条款。
-- GPL-3.0-only，保留 [许可证](LICENSE) 与 [来源说明](NOTICE.md)。漏洞请勿附带可用凭证；先按 [安全说明](SECURITY.md) 脱敏。
+- GPL-3.0-only，保留 [许可证](LICENSE) 与 [来源说明](docs/notice.md)。漏洞请勿附带可用凭证；先按 [安全说明](.github/SECURITY.md) 脱敏。
 
 ## 致谢
 linux.do
